@@ -6,17 +6,22 @@ equilátero, isósceles ou escaleno.*/
  using namespace std;
 int main(int argc, char *argv[]) {
 	setlocale(LC_CTYPE, "portuguese_brazil");
-	int a,b,c;
+	int angulo1,angulo2,angulo3;
 	cout<<"Insira os lados do triângulo: \n";
-	cin>>a>>b>>c;
-	if (a==b && b==c){
+	cin>>angulo1>>angulo2>>angulo3;
+	if (angulo1 + angulo2 + angulo3 == 180) {
+	if (angulo1==angulo2 && angulo2==angulo3){
 		cout<<" é um triângulo equilátero"<<endl;
 	}
-	else if (a!=b && b!=c){
+	else if (angulo1!=angulo2 && angulo2!=angulo3){
 		cout<<" é um triângulo escaleno"<<endl;
 	}
 	else {
 		cout<<" é um triângulo isósceles"<<endl;
+	}
+	}
+	else {
+		cout<<"não é um triângulo, Os ângulos fornecidos não formam um triângulo válido"<<endl;
 	}
 	system("PAUSE");
 	return 0;
