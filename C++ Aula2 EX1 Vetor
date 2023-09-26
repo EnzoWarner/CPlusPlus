@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 	do {
 		cout<<("Insira dez numeros: ");
 		cin>>n;
-		cout<<"\n \n";
+		cout<<"\n";
 		if(n>=0) {
 			elementos[i] = n;
 			i++;
@@ -25,10 +25,11 @@ int main(int argc, char *argv[]) {
 			break;
 		}
 	}
-	while(i<10);
-	for(j=10;j>=0;j--) {
-		cout<<elementos[j]<<"\n";
+	while(i<10&&n>0);
+	for(j=10-1;j>=0;j--) {
+		cout<<elementos[j] << " ";
 	}
+	cout<<endl;
 	system("PAUSE");
 	return 0;
 }
