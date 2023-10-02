@@ -11,7 +11,6 @@ int main(int argc, char *argv[]) {
         cout << "Insira o " << i + 1 << "º número: ";
         cin >> v[i];
     }
-    // Ordenar o vetor usando o Bubble Sort
     for (i = 0; i < 7; i++) {
         for (j = 0; j < 7 - i; j++) {
             if (v[j] > v[j + 1]) {
